@@ -1,0 +1,91 @@
+/* ==========================Distribution Upper section CSS==================================== */
+.wave-container {
+	background: url("/assets/Images/Servicesimages/Distributionuppersection.jfif");
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 40vh;
+    /* text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8); */
+	;
+}
+
+.wave-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.wave-container h1 {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin: 0;
+	z-index: 1;
+	font-size: 80px;
+	transform: translate(-50%,-50%);
+	color: #09ed9f;
+	font-weight: 700;
+	font-family: "Times New Roman", Times, serif;
+	background: -webkit-linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	background: -moz-linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	background: linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media (max-width:922px) {
+	.wave-container h1 {
+		font-size: 63px;
+	}
+}
+
+@media (max-width:922px) {
+	.wave-container h1 {
+		font-size: 40px;
+	}
+}
+/* ==========================Distribution CSS============================= */
+.wrapper h1 {
+	text-align: center;
+	font-size: 65px;
+	font-family: "Times New Roman", Times, serif;
+	padding-top: 30px;
+	color: rgb(59, 194, 142);
+	background: -webkit-linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	background: -moz-linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	background: linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.img area {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.single img {
+	padding: 0 20px 20px;
+	width: 350px;
+	height: 350px;
+	padding-left: 90px;
+	padding-top: 60px;
+	border-radius: 15px;
+	align-items: center;
+}
+
+.single img:hover {
+	opacity: .5;
+	transition: .9s;
+}
+
+.wrapper {
+	background-color: black;
+}

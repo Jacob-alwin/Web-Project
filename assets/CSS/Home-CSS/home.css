@@ -1,0 +1,364 @@
+* {
+	font-family: "Times New Roman", Times, serif;
+	box-sizing: border-box;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+    /*overflow-x: hidden;*/
+}
+/* ------------------------------------Hero section css Starts--------------------------------------*/
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    /* background: url(/assets/Images/Homeimages/HerosectionBackgrounfimage.png); */
+    /* background-size: cover;
+    background-color: blanchedalmond; */
+	;
+}
+
+.home-bg-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+
+.banner::before {
+	content: "";
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/* .banner .content {
+	max-width: 900px;
+	text-align: center;
+	z-index: 1;
+}
+
+.banner .content h2 {
+	font-size: 48px;
+	font-weight: 700;
+	color: #09ed9f;
+}
+
+  
+  
+.banner .content p {
+	font-size: 22px;
+	color: #C5C6C7;
+}
+
+.btn {
+	font-weight: 600;
+	font-size: 13px;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 2px solid #09ed9f;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	letter-spacing: 6px;
+	color: #fff;
+} */
+
+@media (max-width:786px) {
+	.banner .content h2 {
+		font-size: 41px;
+	}
+}
+
+@media (max-width:636px) {
+	.banner .content h2 {
+		font-size: 36px;
+	}
+
+	.banner .content p {
+		font-size: 19px;
+	}
+}
+
+section {
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+.section-bg {
+	background-color: #1a1814;
+}
+
+.section-title {
+	padding-bottom: 40px;
+}
+/* ----------------------------------Hero section Css Ends------------------------------- */
+
+/* -----------------------------------Carousel Css Start-------------------------------- */
+.carousel {
+	width: 100%;
+}
+
+.slider {
+	background-color: #0b0c10;
+	padding-top: 50px;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 80vh;
+}
+
+@media (max-width:990px) {
+	.carousel-inner img {
+		width: 100%;
+		height: 60vh;
+	}
+}
+/* -----------------------------------Carousel css Ends---------------------------------- */
+
+/* ------------------------------------Our Works Css-------------------------------------- */
+.Movies {
+	font-family: "Times New Roman", Times, serif;
+	background-color: #0b0c10;
+	padding-top: 65px;
+}
+
+.movieheading {
+	line-height: 75px;
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 50px;
+	font-weight: 800;
+	color: #09ed9f;
+	background: #0150CC;
+	background: -webkit-linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	background: -moz-linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	background: linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.moviecontainer {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px 30px 0px;
+}
+
+.moviecontainer .moviecard {
+	position: relative;
+	max-width: 300px;
+	height: 260px;
+	background: #fff;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	transition: 00.3s ease-in-out;
+}
+
+.moviecontainer .moviecard:hover {
+	height: 320px;
+}
+
+.moviecontainer .moviecard .movieimgbox {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 194px;
+	height: 260px;
+	top: -50px;
+	left: 0px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.moviecontainer .moviecard .movieimgbox img {
+	max-width: 100%;
+	border-radius: 4px;
+	object-fit: fill;
+}
+
+.moviecontainer .moviecard .moviecontent {
+	position: relative;
+	margin-bottom: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.moviecontainer .moviecard .moviecontent p {
+	border: none;
+}
+
+.moviecontainer .moviecard:hover .moviecontent {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
+/* Button CSS */
+.moviebutton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.moviebutton a .ourworkbtn {
+	position: relative;
+	background: rgb(9,237,159);
+	background: linear-gradient(248deg, rgba(9,237,159,1) 0%, rgba(1,80,204,1) 100%);
+	color: #fff;
+	padding: 10px;
+	width: 163px;
+	margin: 1rem 0;
+	outline: none;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.moviebutton a .ourworkbtn::after {
+	content: '';
+	width: 100%;
+	position: absolute;
+	height: 0.175rem;
+	background: whitesmoke;
+	bottom: 0;
+	left: 0;
+}
+
+.moviebutton a .ourworkbtn-center::after {
+	transform: scale(0,1);
+	transition: transform 0.3s ease;
+}
+
+.moviebutton a .ourworkbtn-center:hover::after {
+	transform: scale(1,1);
+}
+
+@media (max-width: 768px) {
+	.Movies {
+		padding-top: 40px;
+	}
+
+	section {
+		padding: 0px 0;
+	}
+
+	.moviebutton a {
+		margin: 20px 0;
+	}
+}
+/* --------------------------------------Our Works CSS Ends----------------------------- */
+
+/* ---------------------------------------Our Talent Partners Css Starts---------------- */
+.talent {
+	padding-top: 45px;
+	background: #0b0c10;
+}
+
+.talent .row h2 {
+	text-transform: uppercase;
+	line-height: 75px;
+	font-style: normal;
+	font-size: 50px;
+	font-weight: 700;
+	background: #0150CC;
+	background: -webkit-linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	background: -moz-linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	background: linear-gradient(to right, #0150CC 28%, #09ED9F 54%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.talent .imgbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 240px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.talent .imgbox img {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.talent .imgbox:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (max-width:768px) {
+	.talent {
+		padding-top: 40px;
+	}
+
+	.talent .imgbox {
+		min-width: 213px;
+	}
+}
+
+.gradient {
+	background-color: red;
+	background-image: linear-gradient(45deg, #036dda  , #0bd1bd );
+	background-size: 100%;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+/* ---------------------------------Our Talent Partners Css Ends----------------------- */
